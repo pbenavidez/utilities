@@ -1,5 +1,9 @@
 #!/bin/bash
-# This script helps ensure that microcomputers such as the ODROID XU4 can connect to a Wi-Fi network without the GUI-based manager. On the ODROID XU4 and other microcomputers, there is a tendency for the Wi-Fi interface to be on a random interface wlan[0-5]. This script should be called on startup by adding a call to it in  /etc/rc.local
+# This script helps ensure that microcomputers such as the ODROID XU4
+# can connect to a Wi-Fi network without the GUI-based manager. On the
+# ODROID XU4 and other microcomputers, there is a tendency for the Wi-Fi
+# interface to be on a random interface wlan[0-5]. This script should 
+# be called on startup by adding a call to it in  /etc/rc.local
 
 log=/home/$USER/start_wifi_sh.log
 # find the interfaces
