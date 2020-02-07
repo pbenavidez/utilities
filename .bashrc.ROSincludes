@@ -1,5 +1,4 @@
 # Master/slave contents for the .bashrc for ROS
-IF_TYPE="wlan"
-export ROS_IP=`ifconfig | grep -A2 $IF_TYPE | grep "inet addr" | awk -F":" {'print $2'} | awk -F" " {'print $1'}`
+source <path_to_script>/set_my_ros_ip.sh
 ROS_MASTER_IP=$ROS_IP #change this if not this machine is not the master
 export ROS_MASTER_URI=http://$ROS_MASTER_IP:11311/
